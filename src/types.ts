@@ -1,7 +1,7 @@
 export interface User {
   id: number
   name: string
-  bio: string
+  email: string
 }
 export interface Message {
   id: number

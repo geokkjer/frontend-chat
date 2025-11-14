@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import NavbarComponent from '@/components/NavbarComponent.vue'
 import HeroComponent from '@/components/HeroComponent.vue'
-import ProfileView from '@/views/ProfileView.vue'
 import ChatView from '@/views/ChatView.vue'
 
 const router = createRouter({
@@ -19,12 +18,13 @@ const router = createRouter({
       children: [],
     },
     {
-      path: '/profile',
+      path: '/profile/:id',
       name: 'profile',
       components: {
-        default: ProfileView,
+        default: () => import('../views/ProfileView.vue'),
         navbar: NavbarComponent,
       },
+      children: [],
     },
     {
       path: '/chat',

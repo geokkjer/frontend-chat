@@ -11,6 +11,7 @@ const userIndex = ref(1);
     name="navbar"
     :userCount="usersStore.userCount"
     :users="usersStore.getUsers()"
+    :currentUser="usersStore.currentUser"
   />
   <router-view
     class="hero"

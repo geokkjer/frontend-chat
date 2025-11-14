@@ -3,6 +3,7 @@ import type { User } from '@/types'
 const props = defineProps<{
   users: User[]
 }>()
+
 </script>
 <template>
     <h4>Pick a User:</h4>
