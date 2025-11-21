@@ -25,6 +25,7 @@ const router = createRouter({
         navbar: NavbarComponent,
       },
       children: [],
+
     },
     {
       path: '/chat',
